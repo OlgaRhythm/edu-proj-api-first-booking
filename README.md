@@ -21,8 +21,8 @@
 
 ## Swagger UI
 
-При запуске проекта доступ по url: 
-http://localhost:8080/swagger-ui/index.
+При запуске проекта доступ по url:
+http://localhost:8080/swagger-ui/index.html
 
 ![pic_swagger.png](docs/pic_swagger.png)
 
