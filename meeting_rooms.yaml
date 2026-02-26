@@ -1,0 +1,224 @@
+openapi: 3.0.3
+info:
+  title: Бронирование переговорных комнат
+  description: API для бронирования переговорных комнат в офисе
+  version: 0.1.0
+paths:
+
+  /rooms:
+    get:
+      description: Получение списка всех доступных переговорных комнат
+      responses:
+        "200":
+          description: Список переговорок
+          content:
+            "application/json":
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Room'
+        "500":
+          description: Внутренняя ошибка сервера
+
+  /rooms/{room_id}/bookings:
+    get:
+      description: Получение списка забронированных слотов для конкретной переговорки на указанную дату
+      parameters:
+        - name: room_id
+          in: path
+          required: true
+          description: ID переговорной комнаты
+          schema:
+            type: integer
+            minimum: 1
+        - name: date
+          in: query
+          required: true
+          description: Дата в формате YYYY-MM-DD
+          schema:
+            type: string
+            format: date
+            example: "2024-01-20"
+      responses:
+        "200":
+          description: Список бронирований на дату
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Booking'
+        "404":
+          description: Переговорка не найдена
+        "400":
+          description: Неверный формат даты
+
+  /bookings:
+    post:
+      description: Создание нового бронирования переговорки
+      security:
+        - cookieAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BookingRequest'
+      responses:
+        "201":
+          description: Бронирование успешно создано
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Booking'
+        "400":
+          description: Ошибка в данных бронирования
+        "409":
+          description: Время уже занято
+        "404":
+          description: Переговорка не найдена
+
+  /bookings/{booking_id}:
+    get:
+      description: Получение детальной информации о конкретном бронировании
+      operationId: get_booking
+      parameters:
+        - name: booking_id
+          in: path
+          required: true
+          description: ID бронирования
+          schema:
+            type: integer
+            minimum: 1
+      responses:
+        "200":
+          description: Информация о бронировании
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Booking'
+        "404":
+          description: Бронирование не найдено
+
+    delete:
+      description: Отмена существующего бронирования
+      parameters:
+        - name: booking_id
+          in: path
+          required: true
+          description: ID бронирования
+          schema:
+            type: integer
+            minimum: 1
+      responses:
+        "204":
+          description: Бронирование успешно отменено
+        "404":
+          description: Бронирование не найдено
+
+components:
+  securitySchemes:
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: session
+  schemas:
+    Room:
+      type: object
+      required:
+        - id
+        - name
+        - capacity
+      properties:
+        id:
+          type: integer
+          description: Уникальный идентификатор комнаты
+          example: 1
+        name:
+          type: string
+          description: Название переговорки
+          example: "Конференц-зал А"
+        capacity:
+          type: integer
+          description: Вместимость (человек)
+          minimum: 1
+          example: 10
+        equipment:
+          type: array
+          description: Оснащение комнаты
+          items:
+            type: string
+            enum: [projector, tv, whiteboard, videoconference, speaker]
+          example: ["projector", "whiteboard"]
+
+    Booking:
+      type: object
+      required:
+        - id
+        - room_id
+        - booked_by
+        - start_time
+        - end_time
+      properties:
+        id:
+          type: integer
+          description: Уникальный идентификатор бронирования
+          example: 42
+        room_id:
+          type: integer
+          description: ID переговорки
+          example: 1
+        room_name:
+          type: string
+          description: Название переговорки (для удобства)
+          example: "Конференц-зал А"
+        booked_by:
+          type: string
+          description: Email или имя того, кто забронировал
+          example: "alex@company.com"
+        title:
+          type: string
+          description: Название встречи
+          example: "Спринт-ревью"
+        start_time:
+          type: string
+          format: date-time
+          description: Дата и время начала
+          example: "2024-01-20T10:00:00Z"
+        end_time:
+          type: string
+          format: date-time
+          description: Дата и время окончания
+          example: "2024-01-20T11:30:00Z"
+        created_at:
+          type: string
+          format: date-time
+          description: Дата и время создания бронирования
+          example: "2024-01-19T15:30:00Z"
+
+    BookingRequest:
+      type: object
+      required:
+        - room_id
+        - start_time
+        - end_time
+      properties:
+        room_id:
+          type: integer
+          description: ID переговорки
+          minimum: 1
+          example: 1
+        title:
+          type: string
+          description: Название встречи (опционально)
+          example: "Планирование спринта"
+        start_time:
+          type: string
+          format: date-time
+          description: Дата и время начала
+          example: "2024-01-20T14:00:00Z"
+        end_time:
+          type: string
+          format: date-time
+          description: Дата и время окончания
+          example: "2024-01-20T15:00:00Z"

@@ -1,0 +1,13 @@
+org/openapitools/api/BookingsApi.class
+com/example/meetingrooms/RFC3339DateFormat.class
+org/openapitools/model/Booking.class
+org/openapitools/model/Room$EquipmentEnum.class
+org/openapitools/api/RoomsApiController.class
+org/openapitools/api/RoomsApi.class
+org/openapitools/api/ApiUtil.class
+org/openapitools/configuration/HomeController.class
+org/openapitools/configuration/SpringDocConfiguration.class
+com/example/meetingrooms/OpenApiGeneratorApplication.class
+org/openapitools/api/BookingsApiController.class
+org/openapitools/model/Room.class
+org/openapitools/model/BookingRequest.class
