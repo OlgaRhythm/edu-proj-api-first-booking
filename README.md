@@ -54,12 +54,12 @@
 | Бронирований в минуту | `rate(bookings_total[1m])` |
 | Процент отмен | `(bookings_cancelled_total / bookings_total) * 100` |
 
-![booking_total.png](booking_total.png)
-![rate_booking.png](rate_booking.png)
-![canceled_booking.png](canceled_booking.png)
+![booking_total.png](docs/booking_total.png)
+![rate_booking.png](docs/rate_booking.png)
+![canceled_booking.png](docs/canceled_booking.png)
 
 В Prometheus
-![prometheus.png](prometheus.png)
+![prometheus.png](docs/prometheus.png)
 
 ### Запуск стека мониторинга
 
