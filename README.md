@@ -35,7 +35,7 @@
 | Prometheus | http://localhost:9090 | UI для запросов к метрикам |
 | Grafana | http://localhost:3000 | Дашборды (логин: admin / admin) |
 
-![prometheus_m.png](prometheus_m.png)
+![prometheus_m.png](docs/prometheus_m.png)
 
 ### Продуктовые метрики
 
