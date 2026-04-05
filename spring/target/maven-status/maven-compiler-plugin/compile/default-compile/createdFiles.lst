@@ -1,5 +1,6 @@
 org/openapitools/api/BookingsApi.class
 com/example/meetingrooms/RFC3339DateFormat.class
+org/openapitools/api/MetricsService.class
 org/openapitools/model/Booking.class
 org/openapitools/model/Room$EquipmentEnum.class
 org/openapitools/api/RoomsApiController.class

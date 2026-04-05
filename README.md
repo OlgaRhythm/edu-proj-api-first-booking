@@ -19,6 +19,64 @@
 - **Maven** — сборка проекта
 - **OpenAPI Generator** — генерация кода из спецификации
 
+## Метрики и мониторинг
+
+### Стек мониторинга
+- **Prometheus** — сбор и хранение метрик (TSDB)
+- **Grafana** — визуализация и дашборды
+- **Spring Boot Actuator + Micrometer** — экспорт метрик из приложения
+
+### Доступ к сервисам
+
+| Сервис | URL | Описание |
+|--------|-----|----------|
+| Приложение | http://localhost:8080 | API сервер |
+| Метрики | http://localhost:8080/actuator/prometheus | Prometheus-метрики |
+| Prometheus | http://localhost:9090 | UI для запросов к метрикам |
+| Grafana | http://localhost:3000 | Дашборды (логин: admin / admin) |
+
+![prometheus_m.png](prometheus_m.png)
+
+### Продуктовые метрики
+
+| Метрика | Тип | Описание |
+|---------|-----|----------|
+| `bookings_total` | Counter | Общее количество созданных бронирований |
+| `bookings_cancelled_total` | Counter | Общее количество отменённых бронирований |
+| `booking_duration_seconds` | Histogram | Длительность бронирования (p50, p90, p95) |
+| `bookings.room.{id}` | Counter | Количество бронирований по комнатам |
+
+### PromQL запросы на дашборде
+
+| График | PromQL запрос |
+|--------|---------------|
+| Всего бронирований | `bookings_total` |
+| Бронирований в минуту | `rate(bookings_total[1m])` |
+| Процент отмен | `(bookings_cancelled_total / bookings_total) * 100` |
+
+![booking_total.png](booking_total.png)
+![rate_booking.png](rate_booking.png)
+![canceled_booking.png](canceled_booking.png)
+
+В Prometheus
+![prometheus.png](prometheus.png)
+
+### Запуск стека мониторинга
+
+1. **Запустить Prometheus** (с конфигом `prometheus.yml`):
+```bash
+prometheus --config.file=prometheus.yml
+```
+2. Запустить Grafana:
+```bash
+brew services start grafana  # macOS
+# или
+docker run -d -p 3000:3000 grafana/grafana
+```
+3. Настроить источник данных в Grafana:
+- URL: http://localhost:9090
+- Тип: Prometheus
+
 ## Swagger UI
 
 При запуске проекта доступ по url:
