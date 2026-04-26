@@ -80,6 +80,17 @@ Promtail считывает этот файл, парсит записи и от
 docker compose -f docker-compose.observability.yml up -d
 ```
 
+### VictoriaLogs (альтернативное хранилище)
+
+VictoriaLogs запущен как дополнительное хранилище логов с собственным Web UI.
+
+**Web UI:** http://localhost:9428/select/vmui
+
+**Пример запроса:**
+```
+app="booking-service" AND message:~"Booking"
+```
+
 ---
 ## Метрики и мониторинг
 
