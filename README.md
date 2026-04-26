@@ -19,6 +19,68 @@
 - **Maven** — сборка проекта
 - **OpenAPI Generator** — генерация кода из спецификации
 
+## Логирование
+
+### Стек логирования
+
+- **Promtail** — агент для сбора логов из файлов контейнеров
+- **Grafana Loki** — хранилище логов с эффективной индексацией по лейблам
+- **VictoriaLogs** — альтернативное легковесное хранилище логов
+- **Grafana** — визуализация логов через datasource Loki и язык запросов LogQL
+
+### Доступ к сервисам логирования
+
+| Сервис | URL | Описание |
+|--------|-----|----------|
+| Приложение | http://localhost:8080 | API сервер (пишет логи в `logs/booking-service.log`) |
+| Loki | http://localhost:3100 | Хранилище логов |
+| Loki API | http://localhost:3100/loki/api/v1/query_range | Запросы к логам через HTTP API |
+| VictoriaLogs | http://localhost:9428 | Альтернативное хранилище логов |
+| VictoriaLogs VMUI | http://localhost:9428/select/vmui | Web UI для запросов к логам |
+| Grafana | http://localhost:3000 | Дашборды и логи (логин: admin / admin) |
+
+Приложение Spring Boot записывает структурированные логи в файл `logs/booking-service.log`.
+Promtail считывает этот файл, парсит записи и отправляет в Loki.
+Просмотр и анализ логов выполняется в Grafana через LogQL-запросы.
+
+### Что логируется
+| Событие | Уровень | Пример сообщения |
+|---------|---------|------------------|
+| Запрос на создание бронирования | INFO | `Booking request received: roomId=1, startTime=..., endTime=..., title=...` |
+| Успешное создание бронирования | INFO | `Booking created successfully: bookingId=1, roomId=1` |
+| Ошибка создания бронирования | ERROR | `Failed to create booking: roomId=1, error=...` |
+| Запрос на отмену бронирования | INFO | `Booking cancellation requested: bookingId=1` |
+| Успешная отмена бронирования | INFO | `Booking cancelled successfully: bookingId=1` |
+| Ошибка отмены бронирования | ERROR | `Failed to cancel booking: bookingId=1, error=...` |
+| Просмотр бронирования | DEBUG | `Get booking requested: bookingId=1` |
+
+### LogQL запросы на дашборде
+
+| Панель | Тип | LogQL запрос |
+|--------|-----|--------------|
+| Все логи приложения | Logs | `{app="booking-service"}` |
+| Частота логов по уровням | Time Series | `sum by (level) (count_over_time({app="booking-service"}[1m]))` |
+| Ошибки и предупреждения | Logs | `{app="booking-service"} \|~ "(?i)(error\|warn\|failed)"` |
+| Операции бронирования | Logs | `{app="booking-service"} \|= "Booking"` |
+| Бронирований в минуту | Time Series | `count_over_time({app="booking-service"} \|= "Booking created successfully"[1m])` |
+| Отмен в минуту | Time Series | `count_over_time({app="booking-service"} \|= "Booking cancelled"[1m])` |
+
+![all_app_logs_loki_grafana.png](docs/all_app_logs_loki_grafana.png)
+![log_rate_by_level_loki_grafana.png](docs/log_rate_by_level_loki_grafana.png)
+![errors_warnings_loki_grafana.png](docs/errors_warnings_loki_grafana.png)
+![booking_operations_loki_grafana.png](docs/booking_operations_loki_grafana.png)
+![booking_per_minute_loki_grafana.png](docs/booking_per_minute_loki_grafana.png)
+![cancellations_per_minute_loki_grafana.png](docs/cancellations_per_minute_loki_grafana.png)
+
+### Логирование в коде
+Логи добавлены в контроллеры `BookingsApiController` и `RoomsApiController`:
+
+### Запуск стека логирования
+```bash
+docker compose -f docker-compose.observability.yml up -d
+```
+
+---
 ## Метрики и мониторинг
 
 ### Стек мониторинга

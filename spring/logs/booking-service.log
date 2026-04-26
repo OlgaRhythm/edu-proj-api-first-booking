@@ -1,0 +1,92 @@
+2026-04-26 22:40:05 [INFO] o.o.OpenApiGeneratorApplication - Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 47921 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)
+2026-04-26 22:40:05 [INFO] o.o.OpenApiGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-26 22:40:05 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-26 22:40:05 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-26 22:40:05 [INFO] o.o.OpenApiGeneratorApplication - Started OpenApiGeneratorApplication in 0.678 seconds (process running for 0.799)
+2026-04-26 22:40:26 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-26 22:40:26 [INFO] o.o.api.BookingsApiController - Booking request received: roomId=1, startTime=2026-04-05T10:00Z, endTime=2026-04-05T11:00Z, title=null
+2026-04-26 22:40:26 [INFO] o.o.api.BookingsApiController - Booking created successfully: bookingId=1, roomId=1
+2026-04-26 22:53:36 [INFO] o.o.OpenApiGeneratorApplication - Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 48989 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)
+2026-04-26 22:53:36 [INFO] o.o.OpenApiGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-26 22:53:36 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-26 22:53:36 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-26 22:53:36 [INFO] o.o.OpenApiGeneratorApplication - Started OpenApiGeneratorApplication in 0.915 seconds (process running for 1.038)
+2026-04-26 22:53:42 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-26 22:55:01 [INFO] o.o.api.BookingsApiController - Booking request received: roomId=1, startTime=2026-04-05T10:00Z, endTime=2026-04-05T11:00Z, title=null
+2026-04-26 22:55:01 [INFO] o.o.api.BookingsApiController - Booking created successfully: bookingId=1, roomId=1
+2026-04-26 22:57:59 [INFO] o.o.OpenApiGeneratorApplication - Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 49304 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)
+2026-04-26 22:57:59 [INFO] o.o.OpenApiGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-26 22:57:59 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-26 22:57:59 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-26 22:57:59 [INFO] o.o.OpenApiGeneratorApplication - Started OpenApiGeneratorApplication in 0.664 seconds (process running for 0.783)
+2026-04-26 22:58:05 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-26 22:59:52 [INFO] o.o.OpenApiGeneratorApplication - Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 49472 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)
+2026-04-26 22:59:52 [INFO] o.o.OpenApiGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-26 22:59:53 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-26 22:59:53 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-26 22:59:53 [WARN] o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-04-26 22:59:53 [ERROR] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-04-26 23:01:02 [INFO] o.o.OpenApiGeneratorApplication - Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 49582 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)
+2026-04-26 23:01:02 [INFO] o.o.OpenApiGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-26 23:01:02 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-26 23:01:02 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-26 23:01:03 [INFO] o.o.OpenApiGeneratorApplication - Started OpenApiGeneratorApplication in 0.671 seconds (process running for 0.798)
+2026-04-26 23:01:08 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-26 23:01:51 [INFO] o.o.OpenApiGeneratorApplication - Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 49685 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)
+2026-04-26 23:01:51 [INFO] o.o.OpenApiGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-26 23:01:52 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-26 23:01:52 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-26 23:01:52 [INFO] o.o.OpenApiGeneratorApplication - Started OpenApiGeneratorApplication in 0.642 seconds (process running for 0.752)
+2026-04-26 23:01:55 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-26 23:03:24 [INFO] o.o.OpenApiGeneratorApplication - Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 49833 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)
+2026-04-26 23:03:24 [INFO] o.o.OpenApiGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-26 23:03:24 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-26 23:03:24 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-26 23:03:25 [INFO] o.o.OpenApiGeneratorApplication - Started OpenApiGeneratorApplication in 0.647 seconds (process running for 0.757)
+2026-04-26 23:03:29 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-26 23:04:38 [INFO] o.o.api.BookingsApiController - Booking request received: roomId=1, startTime=2026-04-05T10:00Z, endTime=2026-04-05T11:00Z, title=null
+2026-04-26 23:04:38 [INFO] o.o.api.BookingsApiController - Booking created successfully: bookingId=1, roomId=1
+2026-04-26 23:07:13 [INFO] o.o.OpenApiGeneratorApplication - Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 50131 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)
+2026-04-26 23:07:13 [INFO] o.o.OpenApiGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-26 23:07:14 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-26 23:07:14 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-26 23:07:14 [INFO] o.o.OpenApiGeneratorApplication - Started OpenApiGeneratorApplication in 0.653 seconds (process running for 0.762)
+2026-04-26 23:07:18 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-26 23:10:58 [INFO] o.o.OpenApiGeneratorApplication - Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 50397 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)
+2026-04-26 23:10:58 [INFO] o.o.OpenApiGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-26 23:10:58 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-26 23:10:58 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-26 23:10:58 [INFO] o.o.OpenApiGeneratorApplication - Started OpenApiGeneratorApplication in 0.649 seconds (process running for 0.759)
+2026-04-26 23:11:01 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-26 23:15:31 [INFO] o.o.api.BookingsApiController - Booking request received: roomId=1, startTime=2026-04-05T10:00Z, endTime=2026-04-05T11:00Z, title=null
+2026-04-26 23:15:31 [INFO] o.o.api.BookingsApiController - Booking created successfully: bookingId=1, roomId=1
+2026-04-26 23:18:07 [INFO] o.o.api.BookingsApiController - Booking request received: roomId=1, startTime=2026-04-05T10:00Z, endTime=2026-04-05T11:00Z, title=null
+2026-04-26 23:18:07 [INFO] o.o.api.BookingsApiController - Booking created successfully: bookingId=1, roomId=1
+2026-04-26 23:19:56 [INFO] o.o.OpenApiGeneratorApplication - Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 51098 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)
+2026-04-26 23:19:56 [INFO] o.o.OpenApiGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-26 23:19:57 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-26 23:19:57 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-26 23:19:57 [INFO] o.o.OpenApiGeneratorApplication - Started OpenApiGeneratorApplication in 0.647 seconds (process running for 0.757)
+2026-04-26 23:19:59 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-26 23:23:09 [INFO] o.o.api.BookingsApiController - Booking request received: roomId=1, startTime=2026-04-05T10:00Z, endTime=2026-04-05T11:00Z, title=null
+2026-04-26 23:23:09 [INFO] o.o.api.BookingsApiController - Booking created successfully: bookingId=1, roomId=1
+2026-04-26 23:25:04 [WARN] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.openapitools.model.Booking> org.openapitools.api.BookingsApiController.bookingsPost(org.openapitools.model.BookingRequest) with 3 errors: [Field error in object 'bookingRequest' on field 'roomId': rejected value [null]; codes [NotNull.bookingRequest.roomId,NotNull.roomId,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequest.roomId,roomId]; arguments []; default message [roomId]]; default message [не должно равняться null]] [Field error in object 'bookingRequest' on field 'endTime': rejected value [null]; codes [NotNull.bookingRequest.endTime,NotNull.endTime,NotNull.java.time.OffsetDateTime,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequest.endTime,endTime]; arguments []; default message [endTime]]; default message [не должно равняться null]] [Field error in object 'bookingRequest' on field 'startTime': rejected value [null]; codes [NotNull.bookingRequest.startTime,NotNull.startTime,NotNull.java.time.OffsetDateTime,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequest.startTime,startTime]; arguments []; default message [startTime]]; default message [не должно равняться null]] ]
+2026-04-26 23:25:29 [INFO] o.o.api.BookingsApiController - Booking request received: roomId=1, startTime=2026-04-05T10:00Z, endTime=2026-04-05T11:00Z, title=null
+2026-04-26 23:25:29 [INFO] o.o.api.BookingsApiController - Booking created successfully: bookingId=1, roomId=1
+2026-04-26 23:25:37 [INFO] o.o.api.BookingsApiController - Booking cancellation requested: bookingId=1
+2026-04-26 23:25:37 [INFO] o.o.api.BookingsApiController - Booking cancelled successfully: bookingId=1
+2026-04-26 23:47:55 [INFO] o.o.api.BookingsApiController - Booking request received: roomId=1, startTime=2026-04-05T10:00Z, endTime=2026-04-05T11:00Z, title=null
+2026-04-26 23:47:55 [INFO] o.o.api.BookingsApiController - Booking created successfully: bookingId=1, roomId=1
