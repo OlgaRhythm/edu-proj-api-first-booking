@@ -128,4 +128,4 @@ http://localhost:8080/swagger-ui/index.html
    ```
 
 5. **Открыть в браузере**
-    - Swagger UI: http://localhost:8080/swagger-ui.html
+    - Swagger UI: http://localhost:8080/swagger-ui/index.html

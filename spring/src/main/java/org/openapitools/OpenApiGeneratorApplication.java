@@ -13,7 +13,12 @@ import org.springframework.context.annotation.FullyQualifiedAnnotationBeanNameGe
     nameGenerator = FullyQualifiedAnnotationBeanNameGenerator.class
 )
 @ComponentScan(
-    basePackages = {"com.example.meetingrooms", "org.openapitools.api" , "org.openapitools.configuration"},
+    basePackages = {
+            "org.openapitools",
+            "org.openapitools.api" ,
+            "org.openapitools.configuration",
+            "org.openapitools.model"
+    },
     nameGenerator = FullyQualifiedAnnotationBeanNameGenerator.class
 )
 public class OpenApiGeneratorApplication {
@@ -22,7 +27,7 @@ public class OpenApiGeneratorApplication {
         SpringApplication.run(OpenApiGeneratorApplication.class, args);
     }
 
-    @Bean(name = "com.example.meetingrooms.OpenApiGeneratorApplication.jsonNullableModule")
+    @Bean(name = "org.openapitools.OpenApiGeneratorApplication.jsonNullableModule")
     public Module jsonNullableModule() {
         return new JsonNullableModule();
     }

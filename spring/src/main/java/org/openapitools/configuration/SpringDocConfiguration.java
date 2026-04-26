@@ -1,5 +1,6 @@
 package org.openapitools.configuration;
 
+import org.springdoc.core.GroupedOpenApi;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -31,5 +32,20 @@ public class SpringDocConfiguration {
                                 )
                 )
         ;
+    }
+    @Bean
+    public GroupedOpenApi bookingsApi() {
+        return GroupedOpenApi.builder()
+                .group("bookings")
+                .pathsToMatch("/bookings/**")
+                .build();
+    }
+
+    @Bean
+    public GroupedOpenApi roomsApi() {
+        return GroupedOpenApi.builder()
+                .group("rooms")
+                .pathsToMatch("/rooms/**")
+                .build();
     }
 }
