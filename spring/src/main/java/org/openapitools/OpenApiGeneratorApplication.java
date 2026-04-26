@@ -1,4 +1,4 @@
-package com.example.meetingrooms;
+package org.openapitools;
 
 import com.fasterxml.jackson.databind.Module;
 import org.openapitools.jackson.nullable.JsonNullableModule;
