@@ -37,6 +37,14 @@ OTLP/HTTP :4318 → Grafana Tempo → Grafana Explore (TraceQL)
 - **Grafana** — визуализация, дашборды
 - **TraceQL** — язык запросов
 
+### Сбор и хранение
+
+Трейсы собираются через OpenTelemetry Protocol (OTLP) и сохраняются в Grafana Tempo.
+
+### Визуализация и дашборды
+
+В Grafana созданы дашборды для анализа бизнес-показателей:
+
 ### Доступ к сервисам
 
 | Сервис | URL | Описание |
@@ -80,20 +88,6 @@ Observation cancellationSpan = Observation.createNotStarted("booking.cancel", ob
 | `booking.create` | Создание бронирования |
 | `booking.cancel` | Отмена бронирования |
 
-### TraceQL-запросы
-
-```traceql
-# Все трейсы сервиса
-{ resource.service.name = "meeting-rooms" }
-
-# Кастомные спаны
-{ name = "booking.create" }
-{ name = "booking.validation" }
-{ name = "booking.cancel" }
-
-# По комнате
-{ span.room.id = "101" }
-```
 ### Дашборды
 
 *Все трейсы сервиса*
@@ -101,7 +95,7 @@ Observation cancellationSpan = Observation.createNotStarted("booking.cancel", ob
 *Создание бронирований*
 ![Booking Creation](docs/lab52.png)
 *Длительность валидации*
-![Validation durasion](docs/lab53.png)
+![Validation duration](docs/lab53.png)
 *Отмены бронирований*
 ![Cancellations](docs/lab54.png)
 
