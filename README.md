@@ -98,6 +98,8 @@ Observation cancellationSpan = Observation.createNotStarted("booking.cancel", ob
 ![Validation duration](docs/lab53.png)
 *Отмены бронирований*
 ![Cancellations](docs/lab54.png)
+*Трейс с корневым и дочерними спанами*
+![Trace tree](docs/lab55.png)
 
 ### Корреляция с логами
 
