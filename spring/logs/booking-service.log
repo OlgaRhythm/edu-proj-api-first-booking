@@ -1,92 +1,408 @@
-2026-04-26 22:40:05 [INFO] o.o.OpenApiGeneratorApplication - Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 47921 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)
-2026-04-26 22:40:05 [INFO] o.o.OpenApiGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
-2026-04-26 22:40:05 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-04-26 22:40:05 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
-2026-04-26 22:40:05 [INFO] o.o.OpenApiGeneratorApplication - Started OpenApiGeneratorApplication in 0.678 seconds (process running for 0.799)
-2026-04-26 22:40:26 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-04-26 22:40:26 [INFO] o.o.api.BookingsApiController - Booking request received: roomId=1, startTime=2026-04-05T10:00Z, endTime=2026-04-05T11:00Z, title=null
-2026-04-26 22:40:26 [INFO] o.o.api.BookingsApiController - Booking created successfully: bookingId=1, roomId=1
-2026-04-26 22:53:36 [INFO] o.o.OpenApiGeneratorApplication - Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 48989 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)
-2026-04-26 22:53:36 [INFO] o.o.OpenApiGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
-2026-04-26 22:53:36 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-04-26 22:53:36 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
-2026-04-26 22:53:36 [INFO] o.o.OpenApiGeneratorApplication - Started OpenApiGeneratorApplication in 0.915 seconds (process running for 1.038)
-2026-04-26 22:53:42 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-04-26 22:55:01 [INFO] o.o.api.BookingsApiController - Booking request received: roomId=1, startTime=2026-04-05T10:00Z, endTime=2026-04-05T11:00Z, title=null
-2026-04-26 22:55:01 [INFO] o.o.api.BookingsApiController - Booking created successfully: bookingId=1, roomId=1
-2026-04-26 22:57:59 [INFO] o.o.OpenApiGeneratorApplication - Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 49304 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)
-2026-04-26 22:57:59 [INFO] o.o.OpenApiGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
-2026-04-26 22:57:59 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-04-26 22:57:59 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
-2026-04-26 22:57:59 [INFO] o.o.OpenApiGeneratorApplication - Started OpenApiGeneratorApplication in 0.664 seconds (process running for 0.783)
-2026-04-26 22:58:05 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-04-26 22:59:52 [INFO] o.o.OpenApiGeneratorApplication - Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 49472 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)
-2026-04-26 22:59:52 [INFO] o.o.OpenApiGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
-2026-04-26 22:59:53 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-04-26 22:59:53 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
-2026-04-26 22:59:53 [WARN] o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2026-04-26 22:59:53 [ERROR] o.s.b.d.LoggingFailureAnalysisReporter - 
+{"timestamp":"2026-05-17 21:20:31","level":"INFO","traceId":"","spanId":"","logger":"o.o.OpenApiGeneratorApplication","message":"Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 93894 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)"}
+{"timestamp":"2026-05-17 21:20:31","level":"INFO","traceId":"","spanId":"","logger":"o.o.OpenApiGeneratorApplication","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-05-17 21:20:31","level":"INFO","traceId":"","spanId":"","logger":"o.a.catalina.core.StandardService","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-05-17 21:20:31","level":"INFO","traceId":"","spanId":"","logger":"o.a.catalina.core.StandardEngine","message":"Starting Servlet engine: [Apache Tomcat/11.0.20]"}
+{"timestamp":"2026-05-17 21:20:31","level":"INFO","traceId":"","spanId":"","logger":"o.o.OpenApiGeneratorApplication","message":"Started OpenApiGeneratorApplication in 0.734 seconds (process running for 0.876)"}
+{"timestamp":"2026-05-17 21:20:34","level":"INFO","traceId":"","spanId":"","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","message":"Initializing Spring DispatcherServlet 'dispatcherServlet'"}
+{"timestamp":"2026-05-17 21:25:51","level":"WARN","traceId":"","spanId":"","logger":"o.s.w.s.m.s.DefaultHandlerExceptionResolver","message":"Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.openapitools.model.Booking> org.openapitools.api.BookingsApiController.bookingsPost(org.openapitools.model.BookingRequest) with 3 errors: [Field error in object 'bookingRequest' on field 'endTime': rejected value [null]; codes [NotNull.bookingRequest.endTime,NotNull.endTime,NotNull.java.time.OffsetDateTime,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequest.endTime,endTime]; arguments []; default message [endTime]]; default message [не должно равняться null]] [Field error in object 'bookingRequest' on field 'roomId': rejected value [null]; codes [NotNull.bookingRequest.roomId,NotNull.roomId,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequest.roomId,roomId]; arguments []; default message [roomId]]; default message [не должно равняться null]] [Field error in object 'bookingRequest' on field 'startTime': rejected value [null]; codes [NotNull.bookingRequest.startTime,NotNull.startTime,NotNull.java.time.OffsetDateTime,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequest.startTime,startTime]; arguments []; default message [startTime]]; default message [не должно равняться null]] ]"}
+{"timestamp":"2026-05-17 21:27:57","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=101, startTime=2026-05-17T10:00Z, endTime=2026-05-17T11:00Z, title=Team Meeting"}
+{"timestamp":"2026-05-17 21:27:57","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=101"}
+{"timestamp":"2026-05-17 21:27:57","level":"WARN","traceId":"","spanId":"","logger":"i.m.p.PrometheusMeterRegistry","message":"The meter (MeterId{name='http.server.requests', tags=[tag(application=meeting-rooms),tag(booking.id=1),tag(error=none),tag(exception=none),tag(method=POST),tag(outcome=SUCCESS),tag(room.id=101),tag(status=201),tag(uri=/bookings)]}) registration has failed: Prometheus requires that all meters with the same name have the same set of tag keys. There is already an existing meter named 'http_server_requests_seconds' containing tag keys [application, error, exception, method, outcome, status, uri]. The meter you are attempting to register has keys [application, booking_id, error, exception, method, outcome, room_id, status, uri]. Note that subsequent logs will be logged at debug level."}
+{"timestamp":"2026-05-17 21:28:05","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=102, startTime=2026-05-17T14:00Z, endTime=2026-05-17T15:00Z, title=Sprint Planning"}
+{"timestamp":"2026-05-17 21:28:05","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=102"}
+{"timestamp":"2026-05-17 21:28:12","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=103, startTime=2026-05-17T16:00Z, endTime=2026-05-17T17:00Z, title=null"}
+{"timestamp":"2026-05-17 21:28:12","level":"ERROR","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Failed to create booking: roomId=103, error=null"}
+java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:220)
+	at io.micrometer.common.ImmutableKeyValue.<init>(ImmutableKeyValue.java:38)
+	at io.micrometer.common.KeyValue.of(KeyValue.java:48)
+	at io.micrometer.observation.Observation.highCardinalityKeyValue(Observation.java:468)
+	at org.openapitools.api.MetricsService.addBookingToSpan(MetricsService.java:84)
+	at org.openapitools.api.BookingsApiController.bookingsPost(BookingsApiController.java:66)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:172)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at org.openapitools.api.BookingsApiController$$SpringCGLIB$$0.bookingsPost(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+{"timestamp":"2026-05-17 21:28:12","level":"ERROR","traceId":"","spanId":"","logger":"o.a.c.c.C.[.[.[.[dispatcherServlet]","message":"Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException] with root cause"}
+java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:220)
+	at io.micrometer.common.ImmutableKeyValue.<init>(ImmutableKeyValue.java:38)
+	at io.micrometer.common.KeyValue.of(KeyValue.java:48)
+	at io.micrometer.observation.Observation.highCardinalityKeyValue(Observation.java:468)
+	at org.openapitools.api.MetricsService.addBookingToSpan(MetricsService.java:84)
+	at org.openapitools.api.BookingsApiController.bookingsPost(BookingsApiController.java:66)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:172)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at org.openapitools.api.BookingsApiController$$SpringCGLIB$$0.bookingsPost(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+{"timestamp":"2026-05-17 21:28:22","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking cancellation requested: bookingId=1"}
+{"timestamp":"2026-05-17 21:28:22","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking cancelled successfully: bookingId=1"}
+{"timestamp":"2026-05-17 21:28:32","level":"WARN","traceId":"","spanId":"","logger":"o.s.w.s.m.s.DefaultHandlerExceptionResolver","message":"Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.openapitools.model.Booking> org.openapitools.api.BookingsApiController.bookingsPost(org.openapitools.model.BookingRequest) with 2 errors: [Field error in object 'bookingRequest' on field 'startTime': rejected value [null]; codes [NotNull.bookingRequest.startTime,NotNull.startTime,NotNull.java.time.OffsetDateTime,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequest.startTime,startTime]; arguments []; default message [startTime]]; default message [не должно равняться null]] [Field error in object 'bookingRequest' on field 'endTime': rejected value [null]; codes [NotNull.bookingRequest.endTime,NotNull.endTime,NotNull.java.time.OffsetDateTime,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequest.endTime,endTime]; arguments []; default message [endTime]]; default message [не должно равняться null]] ]"}
+{"timestamp":"2026-05-17 21:28:41","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=101, startTime=2026-05-17T10:00Z, endTime=2026-05-17T11:00Z, title=Meeting in room 101"}
+{"timestamp":"2026-05-17 21:28:41","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=101"}
+{"timestamp":"2026-05-17 21:28:41","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=102, startTime=2026-05-17T10:00Z, endTime=2026-05-17T11:00Z, title=Meeting in room 102"}
+{"timestamp":"2026-05-17 21:28:41","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=102"}
+{"timestamp":"2026-05-17 21:28:41","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=103, startTime=2026-05-17T10:00Z, endTime=2026-05-17T11:00Z, title=Meeting in room 103"}
+{"timestamp":"2026-05-17 21:28:41","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=103"}
+{"timestamp":"2026-05-17 21:28:41","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=104, startTime=2026-05-17T10:00Z, endTime=2026-05-17T11:00Z, title=Meeting in room 104"}
+{"timestamp":"2026-05-17 21:28:41","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=104"}
+{"timestamp":"2026-05-17 21:28:41","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=105, startTime=2026-05-17T10:00Z, endTime=2026-05-17T11:00Z, title=Meeting in room 105"}
+{"timestamp":"2026-05-17 21:28:41","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=105"}
+{"timestamp":"2026-05-17 21:28:47","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking cancellation requested: bookingId=1"}
+{"timestamp":"2026-05-17 21:28:47","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking cancelled successfully: bookingId=1"}
+{"timestamp":"2026-05-17 21:28:47","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking cancellation requested: bookingId=3"}
+{"timestamp":"2026-05-17 21:28:47","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking cancelled successfully: bookingId=3"}
+{"timestamp":"2026-05-17 21:28:59","level":"WARN","traceId":"","spanId":"","logger":"o.s.w.s.m.s.DefaultHandlerExceptionResolver","message":"Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.openapitools.model.Booking> org.openapitools.api.BookingsApiController.bookingsPost(org.openapitools.model.BookingRequest): [Field error in object 'bookingRequest' on field 'endTime': rejected value [null]; codes [NotNull.bookingRequest.endTime,NotNull.endTime,NotNull.java.time.OffsetDateTime,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequest.endTime,endTime]; arguments []; default message [endTime]]; default message [не должно равняться null]] ]"}
+{"timestamp":"2026-05-17 21:33:35","level":"INFO","traceId":"","spanId":"","logger":"o.o.OpenApiGeneratorApplication","message":"Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 94416 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)"}
+{"timestamp":"2026-05-17 21:33:35","level":"INFO","traceId":"","spanId":"","logger":"o.o.OpenApiGeneratorApplication","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-05-17 21:33:35","level":"INFO","traceId":"","spanId":"","logger":"o.a.catalina.core.StandardService","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-05-17 21:33:35","level":"INFO","traceId":"","spanId":"","logger":"o.a.catalina.core.StandardEngine","message":"Starting Servlet engine: [Apache Tomcat/11.0.20]"}
+{"timestamp":"2026-05-17 21:33:35","level":"INFO","traceId":"","spanId":"","logger":"o.o.OpenApiGeneratorApplication","message":"Started OpenApiGeneratorApplication in 0.707 seconds (process running for 0.828)"}
+{"timestamp":"2026-05-17 21:33:49","level":"INFO","traceId":"","spanId":"","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","message":"Initializing Spring DispatcherServlet 'dispatcherServlet'"}
+{"timestamp":"2026-05-17 21:40:29","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=101, startTime=2026-05-17T10:00Z, endTime=2026-05-17T11:00Z, title=Team Meeting"}
+{"timestamp":"2026-05-17 21:40:29","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=101"}
+{"timestamp":"2026-05-17 21:40:29","level":"WARN","traceId":"","spanId":"","logger":"i.m.p.PrometheusMeterRegistry","message":"The meter (MeterId{name='http.server.requests', tags=[tag(application=meeting-rooms),tag(booking.id=1),tag(error=none),tag(exception=none),tag(method=POST),tag(outcome=SUCCESS),tag(room.id=101),tag(status=201),tag(uri=/bookings)]}) registration has failed: Prometheus requires that all meters with the same name have the same set of tag keys. There is already an existing meter named 'http_server_requests_seconds' containing tag keys [application, error, exception, method, outcome, status, uri]. The meter you are attempting to register has keys [application, booking_id, error, exception, method, outcome, room_id, status, uri]. Note that subsequent logs will be logged at debug level."}
+{"timestamp":"2026-05-17 21:40:43","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=101, startTime=2026-05-17T10:00Z, endTime=2026-05-17T11:00Z, title=Team Meeting"}
+{"timestamp":"2026-05-17 21:40:43","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=101"}
+{"timestamp":"2026-05-17 21:46:19","level":"INFO","traceId":"","spanId":"","logger":"o.o.OpenApiGeneratorApplication","message":"Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 94784 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)"}
+{"timestamp":"2026-05-17 21:46:19","level":"INFO","traceId":"","spanId":"","logger":"o.o.OpenApiGeneratorApplication","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-05-17 21:46:19","level":"INFO","traceId":"","spanId":"","logger":"o.a.catalina.core.StandardService","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-05-17 21:46:19","level":"INFO","traceId":"","spanId":"","logger":"o.a.catalina.core.StandardEngine","message":"Starting Servlet engine: [Apache Tomcat/11.0.20]"}
+{"timestamp":"2026-05-17 21:46:19","level":"INFO","traceId":"","spanId":"","logger":"o.o.OpenApiGeneratorApplication","message":"Started OpenApiGeneratorApplication in 0.703 seconds (process running for 0.825)"}
+{"timestamp":"2026-05-17 21:46:34","level":"INFO","traceId":"","spanId":"","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","message":"Initializing Spring DispatcherServlet 'dispatcherServlet'"}
+{"timestamp":"2026-05-17 21:46:40","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=101, startTime=2026-05-17T10:00Z, endTime=2026-05-17T11:00Z, title=Team Meeting"}
+{"timestamp":"2026-05-17 21:46:40","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=101"}
+{"timestamp":"2026-05-17 21:46:40","level":"WARN","traceId":"","spanId":"","logger":"i.m.p.PrometheusMeterRegistry","message":"The meter (MeterId{name='http.server.requests', tags=[tag(application=meeting-rooms),tag(booking.id=1),tag(error=none),tag(exception=none),tag(method=POST),tag(outcome=SUCCESS),tag(room.id=101),tag(status=201),tag(uri=/bookings)]}) registration has failed: Prometheus requires that all meters with the same name have the same set of tag keys. There is already an existing meter named 'http_server_requests_seconds' containing tag keys [application, error, exception, method, outcome, status, uri]. The meter you are attempting to register has keys [application, booking_id, error, exception, method, outcome, room_id, status, uri]. Note that subsequent logs will be logged at debug level."}
+{"timestamp":"2026-05-17 21:54:32","level":"INFO","traceId":"","spanId":"","logger":"o.o.OpenApiGeneratorApplication","message":"Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 95011 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)"}
+{"timestamp":"2026-05-17 21:54:32","level":"INFO","traceId":"","spanId":"","logger":"o.o.OpenApiGeneratorApplication","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-05-17 21:54:32","level":"INFO","traceId":"","spanId":"","logger":"o.a.catalina.core.StandardService","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-05-17 21:54:32","level":"INFO","traceId":"","spanId":"","logger":"o.a.catalina.core.StandardEngine","message":"Starting Servlet engine: [Apache Tomcat/11.0.20]"}
+{"timestamp":"2026-05-17 21:54:32","level":"INFO","traceId":"","spanId":"","logger":"o.o.OpenApiGeneratorApplication","message":"Started OpenApiGeneratorApplication in 0.668 seconds (process running for 0.786)"}
+{"timestamp":"2026-05-17 21:54:34","level":"INFO","traceId":"","spanId":"","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","message":"Initializing Spring DispatcherServlet 'dispatcherServlet'"}
+{"timestamp":"2026-05-17 21:54:39","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=101, startTime=2026-05-17T10:00Z, endTime=2026-05-17T11:00Z, title=Team Meeting"}
+{"timestamp":"2026-05-17 21:54:39","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=101"}
+{"timestamp":"2026-05-17 21:55:02","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=101, startTime=2026-05-17T10:00Z, endTime=2026-05-17T11:00Z, title=Team Meeting"}
+{"timestamp":"2026-05-17 21:55:02","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=101"}
+{"timestamp":"2026-05-17 21:56:45","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=101, startTime=2026-05-17T10:00Z, endTime=2026-05-17T11:00Z, title=Test"}
+{"timestamp":"2026-05-17 21:56:45","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=101"}
+{"timestamp":"2026-05-17 22:01:05","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=101, startTime=2026-05-17T10:00Z, endTime=2026-05-17T11:00Z, title=Test"}
+{"timestamp":"2026-05-17 22:01:05","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=101"}
+{"timestamp":"2026-05-17 22:05:05","level":"INFO","traceId":"","spanId":"","logger":"o.o.OpenApiGeneratorApplication","message":"Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 95566 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)"}
+{"timestamp":"2026-05-17 22:05:05","level":"INFO","traceId":"","spanId":"","logger":"o.o.OpenApiGeneratorApplication","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-05-17 22:05:05","level":"INFO","traceId":"","spanId":"","logger":"o.s.boot.tomcat.TomcatWebServer","message":"Tomcat initialized with port 8080 (http)"}
+{"timestamp":"2026-05-17 22:05:05","level":"INFO","traceId":"","spanId":"","logger":"o.a.catalina.core.StandardService","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-05-17 22:05:05","level":"INFO","traceId":"","spanId":"","logger":"o.a.catalina.core.StandardEngine","message":"Starting Servlet engine: [Apache Tomcat/11.0.20]"}
+{"timestamp":"2026-05-17 22:05:05","level":"INFO","traceId":"","spanId":"","logger":"o.s.b.w.c.s.WebApplicationContextInitializer","message":"Root WebApplicationContext: initialization completed in 330 ms"}
+{"timestamp":"2026-05-17 22:05:05","level":"WARN","traceId":"","spanId":"","logger":"o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext","message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'observedAspect' defined in class path resource [org/openapitools/configuration/TracingConfig.class]: Failed to instantiate [io.micrometer.observation.aop.ObservedAspect]: Factory method 'observedAspect' threw exception with message: org/aspectj/lang/NoAspectBoundException"}
+{"timestamp":"2026-05-17 22:05:05","level":"INFO","traceId":"","spanId":"","logger":"o.a.catalina.core.StandardService","message":"Stopping service [Tomcat]"}
+{"timestamp":"2026-05-17 22:05:05","level":"INFO","traceId":"","spanId":"","logger":"o.s.b.a.l.ConditionEvaluationReportLogger","message":"
 
-***************************
-APPLICATION FAILED TO START
-***************************
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled."}
+{"timestamp":"2026-05-17 22:05:05","level":"ERROR","traceId":"","spanId":"","logger":"o.s.boot.SpringApplication","message":"Application run failed"}
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'observedAspect' defined in class path resource [org/openapitools/configuration/TracingConfig.class]: Failed to instantiate [io.micrometer.observation.aop.ObservedAspect]: Factory method 'observedAspect' threw exception with message: org/aspectj/lang/NoAspectBoundException
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1218)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1184)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:994)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.openapitools.OpenApiGeneratorApplication.main(OpenApiGeneratorApplication.java:26)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [io.micrometer.observation.aop.ObservedAspect]: Factory method 'observedAspect' threw exception with message: org/aspectj/lang/NoAspectBoundException
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:183)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:72)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:152)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 21 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/aspectj/lang/NoAspectBoundException
+	at org.openapitools.configuration.TracingConfig.observedAspect(TracingConfig.java:13)
+	at org.openapitools.configuration.TracingConfig$$SpringCGLIB$$0.CGLIB$observedAspect$0(<generated>)
+	at org.openapitools.configuration.TracingConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:398)
+	at org.openapitools.configuration.TracingConfig$$SpringCGLIB$$0.observedAspect(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:155)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.aspectj.lang.NoAspectBoundException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	... 33 common frames omitted
+{"timestamp":"2026-05-17 22:05:38","level":"INFO","traceId":"","spanId":"","logger":"o.o.OpenApiGeneratorApplication","message":"Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 95621 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)"}
+{"timestamp":"2026-05-17 22:05:38","level":"INFO","traceId":"","spanId":"","logger":"o.o.OpenApiGeneratorApplication","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-05-17 22:05:38","level":"INFO","traceId":"","spanId":"","logger":"o.s.boot.tomcat.TomcatWebServer","message":"Tomcat initialized with port 8080 (http)"}
+{"timestamp":"2026-05-17 22:05:38","level":"INFO","traceId":"","spanId":"","logger":"o.a.catalina.core.StandardService","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-05-17 22:05:38","level":"INFO","traceId":"","spanId":"","logger":"o.a.catalina.core.StandardEngine","message":"Starting Servlet engine: [Apache Tomcat/11.0.20]"}
+{"timestamp":"2026-05-17 22:05:38","level":"INFO","traceId":"","spanId":"","logger":"o.s.b.w.c.s.WebApplicationContextInitializer","message":"Root WebApplicationContext: initialization completed in 358 ms"}
+{"timestamp":"2026-05-17 22:05:38","level":"WARN","traceId":"","spanId":"","logger":"o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext","message":"Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'observedAspect' defined in class path resource [org/openapitools/configuration/TracingConfig.class]: Failed to instantiate [io.micrometer.observation.aop.ObservedAspect]: Factory method 'observedAspect' threw exception with message: org/aspectj/lang/NoAspectBoundException"}
+{"timestamp":"2026-05-17 22:05:38","level":"INFO","traceId":"","spanId":"","logger":"o.a.catalina.core.StandardService","message":"Stopping service [Tomcat]"}
+{"timestamp":"2026-05-17 22:05:38","level":"INFO","traceId":"","spanId":"","logger":"o.s.b.a.l.ConditionEvaluationReportLogger","message":"
 
-Description:
-
-Web server failed to start. Port 8080 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
-
-2026-04-26 23:01:02 [INFO] o.o.OpenApiGeneratorApplication - Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 49582 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)
-2026-04-26 23:01:02 [INFO] o.o.OpenApiGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
-2026-04-26 23:01:02 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-04-26 23:01:02 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
-2026-04-26 23:01:03 [INFO] o.o.OpenApiGeneratorApplication - Started OpenApiGeneratorApplication in 0.671 seconds (process running for 0.798)
-2026-04-26 23:01:08 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-04-26 23:01:51 [INFO] o.o.OpenApiGeneratorApplication - Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 49685 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)
-2026-04-26 23:01:51 [INFO] o.o.OpenApiGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
-2026-04-26 23:01:52 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-04-26 23:01:52 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
-2026-04-26 23:01:52 [INFO] o.o.OpenApiGeneratorApplication - Started OpenApiGeneratorApplication in 0.642 seconds (process running for 0.752)
-2026-04-26 23:01:55 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-04-26 23:03:24 [INFO] o.o.OpenApiGeneratorApplication - Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 49833 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)
-2026-04-26 23:03:24 [INFO] o.o.OpenApiGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
-2026-04-26 23:03:24 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-04-26 23:03:24 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
-2026-04-26 23:03:25 [INFO] o.o.OpenApiGeneratorApplication - Started OpenApiGeneratorApplication in 0.647 seconds (process running for 0.757)
-2026-04-26 23:03:29 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-04-26 23:04:38 [INFO] o.o.api.BookingsApiController - Booking request received: roomId=1, startTime=2026-04-05T10:00Z, endTime=2026-04-05T11:00Z, title=null
-2026-04-26 23:04:38 [INFO] o.o.api.BookingsApiController - Booking created successfully: bookingId=1, roomId=1
-2026-04-26 23:07:13 [INFO] o.o.OpenApiGeneratorApplication - Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 50131 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)
-2026-04-26 23:07:13 [INFO] o.o.OpenApiGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
-2026-04-26 23:07:14 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-04-26 23:07:14 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
-2026-04-26 23:07:14 [INFO] o.o.OpenApiGeneratorApplication - Started OpenApiGeneratorApplication in 0.653 seconds (process running for 0.762)
-2026-04-26 23:07:18 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-04-26 23:10:58 [INFO] o.o.OpenApiGeneratorApplication - Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 50397 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)
-2026-04-26 23:10:58 [INFO] o.o.OpenApiGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
-2026-04-26 23:10:58 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-04-26 23:10:58 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
-2026-04-26 23:10:58 [INFO] o.o.OpenApiGeneratorApplication - Started OpenApiGeneratorApplication in 0.649 seconds (process running for 0.759)
-2026-04-26 23:11:01 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-04-26 23:15:31 [INFO] o.o.api.BookingsApiController - Booking request received: roomId=1, startTime=2026-04-05T10:00Z, endTime=2026-04-05T11:00Z, title=null
-2026-04-26 23:15:31 [INFO] o.o.api.BookingsApiController - Booking created successfully: bookingId=1, roomId=1
-2026-04-26 23:18:07 [INFO] o.o.api.BookingsApiController - Booking request received: roomId=1, startTime=2026-04-05T10:00Z, endTime=2026-04-05T11:00Z, title=null
-2026-04-26 23:18:07 [INFO] o.o.api.BookingsApiController - Booking created successfully: bookingId=1, roomId=1
-2026-04-26 23:19:56 [INFO] o.o.OpenApiGeneratorApplication - Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 51098 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)
-2026-04-26 23:19:56 [INFO] o.o.OpenApiGeneratorApplication - No active profile set, falling back to 1 default profile: "default"
-2026-04-26 23:19:57 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-04-26 23:19:57 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
-2026-04-26 23:19:57 [INFO] o.o.OpenApiGeneratorApplication - Started OpenApiGeneratorApplication in 0.647 seconds (process running for 0.757)
-2026-04-26 23:19:59 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-04-26 23:23:09 [INFO] o.o.api.BookingsApiController - Booking request received: roomId=1, startTime=2026-04-05T10:00Z, endTime=2026-04-05T11:00Z, title=null
-2026-04-26 23:23:09 [INFO] o.o.api.BookingsApiController - Booking created successfully: bookingId=1, roomId=1
-2026-04-26 23:25:04 [WARN] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.openapitools.model.Booking> org.openapitools.api.BookingsApiController.bookingsPost(org.openapitools.model.BookingRequest) with 3 errors: [Field error in object 'bookingRequest' on field 'roomId': rejected value [null]; codes [NotNull.bookingRequest.roomId,NotNull.roomId,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequest.roomId,roomId]; arguments []; default message [roomId]]; default message [не должно равняться null]] [Field error in object 'bookingRequest' on field 'endTime': rejected value [null]; codes [NotNull.bookingRequest.endTime,NotNull.endTime,NotNull.java.time.OffsetDateTime,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequest.endTime,endTime]; arguments []; default message [endTime]]; default message [не должно равняться null]] [Field error in object 'bookingRequest' on field 'startTime': rejected value [null]; codes [NotNull.bookingRequest.startTime,NotNull.startTime,NotNull.java.time.OffsetDateTime,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequest.startTime,startTime]; arguments []; default message [startTime]]; default message [не должно равняться null]] ]
-2026-04-26 23:25:29 [INFO] o.o.api.BookingsApiController - Booking request received: roomId=1, startTime=2026-04-05T10:00Z, endTime=2026-04-05T11:00Z, title=null
-2026-04-26 23:25:29 [INFO] o.o.api.BookingsApiController - Booking created successfully: bookingId=1, roomId=1
-2026-04-26 23:25:37 [INFO] o.o.api.BookingsApiController - Booking cancellation requested: bookingId=1
-2026-04-26 23:25:37 [INFO] o.o.api.BookingsApiController - Booking cancelled successfully: bookingId=1
-2026-04-26 23:47:55 [INFO] o.o.api.BookingsApiController - Booking request received: roomId=1, startTime=2026-04-05T10:00Z, endTime=2026-04-05T11:00Z, title=null
-2026-04-26 23:47:55 [INFO] o.o.api.BookingsApiController - Booking created successfully: bookingId=1, roomId=1
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled."}
+{"timestamp":"2026-05-17 22:05:38","level":"ERROR","traceId":"","spanId":"","logger":"o.s.boot.SpringApplication","message":"Application run failed"}
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'observedAspect' defined in class path resource [org/openapitools/configuration/TracingConfig.class]: Failed to instantiate [io.micrometer.observation.aop.ObservedAspect]: Factory method 'observedAspect' threw exception with message: org/aspectj/lang/NoAspectBoundException
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1218)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1184)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:994)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.openapitools.OpenApiGeneratorApplication.main(OpenApiGeneratorApplication.java:26)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [io.micrometer.observation.aop.ObservedAspect]: Factory method 'observedAspect' threw exception with message: org/aspectj/lang/NoAspectBoundException
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:183)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:72)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:152)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 21 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/aspectj/lang/NoAspectBoundException
+	at org.openapitools.configuration.TracingConfig.observedAspect(TracingConfig.java:13)
+	at org.openapitools.configuration.TracingConfig$$SpringCGLIB$$0.CGLIB$observedAspect$0(<generated>)
+	at org.openapitools.configuration.TracingConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:398)
+	at org.openapitools.configuration.TracingConfig$$SpringCGLIB$$0.observedAspect(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:155)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.aspectj.lang.NoAspectBoundException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	... 33 common frames omitted
+{"timestamp":"2026-05-17 22:07:24","level":"INFO","traceId":"","spanId":"","logger":"o.o.OpenApiGeneratorApplication","message":"Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 95696 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)"}
+{"timestamp":"2026-05-17 22:07:24","level":"INFO","traceId":"","spanId":"","logger":"o.o.OpenApiGeneratorApplication","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-05-17 22:07:25","level":"INFO","traceId":"","spanId":"","logger":"o.s.boot.tomcat.TomcatWebServer","message":"Tomcat initialized with port 8080 (http)"}
+{"timestamp":"2026-05-17 22:07:25","level":"INFO","traceId":"","spanId":"","logger":"o.a.catalina.core.StandardService","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-05-17 22:07:25","level":"INFO","traceId":"","spanId":"","logger":"o.a.catalina.core.StandardEngine","message":"Starting Servlet engine: [Apache Tomcat/11.0.20]"}
+{"timestamp":"2026-05-17 22:07:25","level":"INFO","traceId":"","spanId":"","logger":"o.s.b.w.c.s.WebApplicationContextInitializer","message":"Root WebApplicationContext: initialization completed in 370 ms"}
+{"timestamp":"2026-05-17 22:07:25","level":"INFO","traceId":"","spanId":"","logger":"o.s.b.a.e.web.EndpointLinksResolver","message":"Exposing 3 endpoints beneath base path '/actuator'"}
+{"timestamp":"2026-05-17 22:07:25","level":"INFO","traceId":"","spanId":"","logger":"o.s.boot.tomcat.TomcatWebServer","message":"Tomcat started on port 8080 (http) with context path '/'"}
+{"timestamp":"2026-05-17 22:07:25","level":"INFO","traceId":"","spanId":"","logger":"o.o.OpenApiGeneratorApplication","message":"Started OpenApiGeneratorApplication in 0.729 seconds (process running for 0.852)"}
+{"timestamp":"2026-05-17 22:07:34","level":"INFO","traceId":"","spanId":"","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","message":"Initializing Spring DispatcherServlet 'dispatcherServlet'"}
+{"timestamp":"2026-05-17 22:07:34","level":"INFO","traceId":"","spanId":"","logger":"o.s.web.servlet.DispatcherServlet","message":"Initializing Servlet 'dispatcherServlet'"}
+{"timestamp":"2026-05-17 22:07:34","level":"INFO","traceId":"","spanId":"","logger":"o.s.web.servlet.DispatcherServlet","message":"Completed initialization in 1 ms"}
+{"timestamp":"2026-05-17 22:07:53","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=101, startTime=2026-05-17T10:00Z, endTime=2026-05-17T11:00Z, title=Test Meeting"}
+{"timestamp":"2026-05-17 22:07:53","level":"INFO","traceId":"","spanId":"","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=101"}
+{"timestamp":"2026-05-17 22:11:18","level":"INFO","traceId":"","spanId":"","logger":"o.s.boot.tomcat.GracefulShutdown","message":"Commencing graceful shutdown. Waiting for active requests to complete"}
+{"timestamp":"2026-05-17 22:11:18","level":"INFO","traceId":"","spanId":"","logger":"o.s.boot.tomcat.GracefulShutdown","message":"Graceful shutdown complete"}
+{"timestamp":"2026-05-17 22:19:15","level":"INFO","traceId":"","spanId":"","logger":"o.o.OpenApiGeneratorApplication","message":"Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 96457 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)"}
+{"timestamp":"2026-05-17 22:19:15","level":"INFO","traceId":"","spanId":"","logger":"o.o.OpenApiGeneratorApplication","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-05-17 22:19:15","level":"INFO","traceId":"","spanId":"","logger":"o.s.b.w.e.tomcat.TomcatWebServer","message":"Tomcat initialized with port 8080 (http)"}
+{"timestamp":"2026-05-17 22:19:15","level":"INFO","traceId":"","spanId":"","logger":"o.a.catalina.core.StandardService","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-05-17 22:19:15","level":"INFO","traceId":"","spanId":"","logger":"o.a.catalina.core.StandardEngine","message":"Starting Servlet engine: [Apache Tomcat/10.1.53]"}
+{"timestamp":"2026-05-17 22:19:15","level":"INFO","traceId":"","spanId":"","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","message":"Initializing Spring embedded WebApplicationContext"}
+{"timestamp":"2026-05-17 22:19:15","level":"INFO","traceId":"","spanId":"","logger":"o.s.b.w.s.c.ServletWebServerApplicationContext","message":"Root WebApplicationContext: initialization completed in 343 ms"}
+{"timestamp":"2026-05-17 22:19:15","level":"INFO","traceId":"","spanId":"","logger":"o.s.b.a.e.web.EndpointLinksResolver","message":"Exposing 3 endpoints beneath base path '/actuator'"}
+{"timestamp":"2026-05-17 22:19:15","level":"INFO","traceId":"","spanId":"","logger":"o.s.b.w.e.tomcat.TomcatWebServer","message":"Tomcat started on port 8080 (http) with context path '/'"}
+{"timestamp":"2026-05-17 22:19:15","level":"INFO","traceId":"","spanId":"","logger":"o.o.OpenApiGeneratorApplication","message":"Started OpenApiGeneratorApplication in 0.839 seconds (process running for 0.941)"}
+{"timestamp":"2026-05-17 22:19:19","level":"INFO","traceId":"","spanId":"","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","message":"Initializing Spring DispatcherServlet 'dispatcherServlet'"}
+{"timestamp":"2026-05-17 22:19:19","level":"INFO","traceId":"","spanId":"","logger":"o.s.web.servlet.DispatcherServlet","message":"Initializing Servlet 'dispatcherServlet'"}
+{"timestamp":"2026-05-17 22:19:19","level":"INFO","traceId":"","spanId":"","logger":"o.s.web.servlet.DispatcherServlet","message":"Completed initialization in 0 ms"}
+{"timestamp":"2026-05-17 22:19:32","level":"INFO","traceId":"a8edf9f64fda067ebacc09d8bb098c05","spanId":"bb0e40033ea089c8","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=101, startTime=2026-05-17T10:00Z, endTime=2026-05-17T11:00Z, title=Test"}
+{"timestamp":"2026-05-17 22:19:32","level":"INFO","traceId":"a8edf9f64fda067ebacc09d8bb098c05","spanId":"bb0e40033ea089c8","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=101"}
+{"timestamp":"2026-05-17 22:20:04","level":"INFO","traceId":"7f30c96d043335f4bdc20ba1cf0faa78","spanId":"15fa12873eed81e7","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=101, startTime=2026-05-17T10:00Z, endTime=2026-05-17T11:00Z, title=Meeting 101"}
+{"timestamp":"2026-05-17 22:20:04","level":"INFO","traceId":"7f30c96d043335f4bdc20ba1cf0faa78","spanId":"15fa12873eed81e7","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=101"}
+{"timestamp":"2026-05-17 22:20:04","level":"INFO","traceId":"257e5768deb5904ecfc237f7b9619022","spanId":"0a312fda0ff243c7","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=102, startTime=2026-05-17T10:00Z, endTime=2026-05-17T11:00Z, title=Meeting 102"}
+{"timestamp":"2026-05-17 22:20:04","level":"INFO","traceId":"257e5768deb5904ecfc237f7b9619022","spanId":"0a312fda0ff243c7","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=102"}
+{"timestamp":"2026-05-17 22:20:04","level":"INFO","traceId":"8d9f3e87750377b6a906141c0ee9afec","spanId":"ee2a4ec0050a4e20","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=103, startTime=2026-05-17T10:00Z, endTime=2026-05-17T11:00Z, title=Meeting 103"}
+{"timestamp":"2026-05-17 22:20:04","level":"INFO","traceId":"8d9f3e87750377b6a906141c0ee9afec","spanId":"ee2a4ec0050a4e20","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=103"}
+{"timestamp":"2026-05-17 22:20:09","level":"INFO","traceId":"dd058c3b69bdc16b0d2311ec6455b818","spanId":"fd1374d20b5193d4","logger":"o.o.api.BookingsApiController","message":"Booking cancellation requested: bookingId=1"}
+{"timestamp":"2026-05-17 22:20:09","level":"INFO","traceId":"dd058c3b69bdc16b0d2311ec6455b818","spanId":"fd1374d20b5193d4","logger":"o.o.api.BookingsApiController","message":"Booking cancelled successfully: bookingId=1"}
+{"timestamp":"2026-05-17 22:25:15","level":"INFO","traceId":"","spanId":"","logger":"o.s.b.w.e.tomcat.GracefulShutdown","message":"Commencing graceful shutdown. Waiting for active requests to complete"}
+{"timestamp":"2026-05-17 22:25:15","level":"INFO","traceId":"","spanId":"","logger":"o.s.b.w.e.tomcat.GracefulShutdown","message":"Graceful shutdown complete"}
+{"timestamp":"2026-05-17 22:26:50","level":"INFO","traceId":"","spanId":"","logger":"o.o.OpenApiGeneratorApplication","message":"Starting OpenApiGeneratorApplication using Java 24.0.1 with PID 96712 (/Users/olgaakubova/Documents/ITMO/Booking/spring/target/classes started by olgaakubova in /Users/olgaakubova/Documents/ITMO/Booking/spring)"}
+{"timestamp":"2026-05-17 22:26:50","level":"INFO","traceId":"","spanId":"","logger":"o.o.OpenApiGeneratorApplication","message":"No active profile set, falling back to 1 default profile: "default""}
+{"timestamp":"2026-05-17 22:26:51","level":"INFO","traceId":"","spanId":"","logger":"o.s.b.w.e.tomcat.TomcatWebServer","message":"Tomcat initialized with port 8080 (http)"}
+{"timestamp":"2026-05-17 22:26:51","level":"INFO","traceId":"","spanId":"","logger":"o.a.catalina.core.StandardService","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-05-17 22:26:51","level":"INFO","traceId":"","spanId":"","logger":"o.a.catalina.core.StandardEngine","message":"Starting Servlet engine: [Apache Tomcat/10.1.53]"}
+{"timestamp":"2026-05-17 22:26:51","level":"INFO","traceId":"","spanId":"","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","message":"Initializing Spring embedded WebApplicationContext"}
+{"timestamp":"2026-05-17 22:26:51","level":"INFO","traceId":"","spanId":"","logger":"o.s.b.w.s.c.ServletWebServerApplicationContext","message":"Root WebApplicationContext: initialization completed in 352 ms"}
+{"timestamp":"2026-05-17 22:26:51","level":"INFO","traceId":"","spanId":"","logger":"o.s.b.a.e.web.EndpointLinksResolver","message":"Exposing 3 endpoints beneath base path '/actuator'"}
+{"timestamp":"2026-05-17 22:26:51","level":"INFO","traceId":"","spanId":"","logger":"o.s.b.w.e.tomcat.TomcatWebServer","message":"Tomcat started on port 8080 (http) with context path '/'"}
+{"timestamp":"2026-05-17 22:26:51","level":"INFO","traceId":"","spanId":"","logger":"o.o.OpenApiGeneratorApplication","message":"Started OpenApiGeneratorApplication in 0.871 seconds (process running for 0.973)"}
+{"timestamp":"2026-05-17 22:26:58","level":"INFO","traceId":"","spanId":"","logger":"o.a.c.c.C.[Tomcat].[localhost].[/]","message":"Initializing Spring DispatcherServlet 'dispatcherServlet'"}
+{"timestamp":"2026-05-17 22:26:58","level":"INFO","traceId":"","spanId":"","logger":"o.s.web.servlet.DispatcherServlet","message":"Initializing Servlet 'dispatcherServlet'"}
+{"timestamp":"2026-05-17 22:26:58","level":"INFO","traceId":"","spanId":"","logger":"o.s.web.servlet.DispatcherServlet","message":"Completed initialization in 1 ms"}
+{"timestamp":"2026-05-17 22:26:58","level":"INFO","traceId":"bb0248fb8a464638b2f14f19abb068e0","spanId":"3791c6a31aa5c029","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=101, startTime=2026-05-17T10:00Z, endTime=2026-05-17T11:00Z, title=Meeting in room 101"}
+{"timestamp":"2026-05-17 22:26:58","level":"INFO","traceId":"bb0248fb8a464638b2f14f19abb068e0","spanId":"3791c6a31aa5c029","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=101"}
+{"timestamp":"2026-05-17 22:26:58","level":"INFO","traceId":"b9d69cbb3f3e1ab8f95c5ca18792bd3c","spanId":"a745353519546251","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=102, startTime=2026-05-17T10:00Z, endTime=2026-05-17T11:00Z, title=Meeting in room 102"}
+{"timestamp":"2026-05-17 22:26:58","level":"INFO","traceId":"b9d69cbb3f3e1ab8f95c5ca18792bd3c","spanId":"a745353519546251","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=102"}
+{"timestamp":"2026-05-17 22:26:58","level":"INFO","traceId":"c4b1ea5781b479daf87a76d295054e23","spanId":"e617d4c5e30bc34e","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=103, startTime=2026-05-17T10:00Z, endTime=2026-05-17T11:00Z, title=Meeting in room 103"}
+{"timestamp":"2026-05-17 22:26:58","level":"INFO","traceId":"c4b1ea5781b479daf87a76d295054e23","spanId":"e617d4c5e30bc34e","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=103"}
+{"timestamp":"2026-05-17 22:26:58","level":"INFO","traceId":"85d210b3046b2e0f7fc6a2898208703e","spanId":"bc24193b5aad35a5","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=104, startTime=2026-05-17T10:00Z, endTime=2026-05-17T11:00Z, title=Meeting in room 104"}
+{"timestamp":"2026-05-17 22:26:58","level":"INFO","traceId":"85d210b3046b2e0f7fc6a2898208703e","spanId":"bc24193b5aad35a5","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=104"}
+{"timestamp":"2026-05-17 22:26:58","level":"INFO","traceId":"8d7d01c765f872e1e28fbc4c39f2b751","spanId":"485b5ea9f5cee1d7","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=105, startTime=2026-05-17T10:00Z, endTime=2026-05-17T11:00Z, title=Meeting in room 105"}
+{"timestamp":"2026-05-17 22:26:58","level":"INFO","traceId":"8d7d01c765f872e1e28fbc4c39f2b751","spanId":"485b5ea9f5cee1d7","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=105"}
+{"timestamp":"2026-05-17 22:27:18","level":"INFO","traceId":"93fce1861a66ea86745749cd67f371fa","spanId":"d9a6865fcf5a3b9e","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=101, startTime=2026-05-17T10:00Z, endTime=2026-05-17T10:15Z, title=Quick Sync"}
+{"timestamp":"2026-05-17 22:27:18","level":"INFO","traceId":"93fce1861a66ea86745749cd67f371fa","spanId":"d9a6865fcf5a3b9e","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=101"}
+{"timestamp":"2026-05-17 22:27:27","level":"INFO","traceId":"54fc359a064a1e5522658877a444a603","spanId":"34467ecb9a6f805c","logger":"o.o.api.BookingsApiController","message":"Booking cancellation requested: bookingId=1"}
+{"timestamp":"2026-05-17 22:27:27","level":"INFO","traceId":"54fc359a064a1e5522658877a444a603","spanId":"34467ecb9a6f805c","logger":"o.o.api.BookingsApiController","message":"Booking cancelled successfully: bookingId=1"}
+{"timestamp":"2026-05-17 22:27:27","level":"INFO","traceId":"8a38a6c25e6ed078af8ee1c3194f2508","spanId":"d5c83d0316d60f0a","logger":"o.o.api.BookingsApiController","message":"Booking cancellation requested: bookingId=2"}
+{"timestamp":"2026-05-17 22:27:27","level":"INFO","traceId":"8a38a6c25e6ed078af8ee1c3194f2508","spanId":"d5c83d0316d60f0a","logger":"o.o.api.BookingsApiController","message":"Booking cancelled successfully: bookingId=2"}
+{"timestamp":"2026-05-17 22:27:33","level":"WARN","traceId":"1194e6ae11acf26b6107aff31cedf898","spanId":"9539791f3cf41744","logger":"o.s.w.s.m.s.DefaultHandlerExceptionResolver","message":"Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.openapitools.model.Booking> org.openapitools.api.BookingsApiController.bookingsPost(org.openapitools.model.BookingRequest): [Field error in object 'bookingRequest' on field 'endTime': rejected value [null]; codes [NotNull.bookingRequest.endTime,NotNull.endTime,NotNull.java.time.OffsetDateTime,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequest.endTime,endTime]; arguments []; default message [endTime]]; default message [не должно равняться null]] ]"}
+{"timestamp":"2026-05-17 22:35:51","level":"INFO","traceId":"960dc56299251dc2285492210c7d4cd0","spanId":"5760b8c37b092b9f","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=101, startTime=2026-05-17T09:00Z, endTime=2026-05-17T10:00Z, title=Daily Standup"}
+{"timestamp":"2026-05-17 22:35:51","level":"INFO","traceId":"960dc56299251dc2285492210c7d4cd0","spanId":"5760b8c37b092b9f","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=101"}
+{"timestamp":"2026-05-17 22:35:56","level":"INFO","traceId":"a864811deecb901218e6ca8a9669d6ab","spanId":"ae6b7e8839749c86","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=101, startTime=2026-05-17T11:00Z, endTime=2026-05-17T12:00Z, title=Sprint Planning"}
+{"timestamp":"2026-05-17 22:35:56","level":"INFO","traceId":"a864811deecb901218e6ca8a9669d6ab","spanId":"ae6b7e8839749c86","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=101"}
+{"timestamp":"2026-05-17 22:36:00","level":"INFO","traceId":"27b92c4c24783d2ea17cf0637e3a24a2","spanId":"29bf13852a994fbe","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=101, startTime=2026-05-17T14:00Z, endTime=2026-05-17T15:00Z, title=Code Review"}
+{"timestamp":"2026-05-17 22:36:00","level":"INFO","traceId":"27b92c4c24783d2ea17cf0637e3a24a2","spanId":"29bf13852a994fbe","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=101"}
+{"timestamp":"2026-05-17 22:36:04","level":"INFO","traceId":"180d35b50da2fe161f73ca8f28228172","spanId":"d951287762b9a41c","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=102, startTime=2026-05-17T10:00Z, endTime=2026-05-17T11:00Z, title=Design Review"}
+{"timestamp":"2026-05-17 22:36:04","level":"INFO","traceId":"180d35b50da2fe161f73ca8f28228172","spanId":"d951287762b9a41c","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=102"}
+{"timestamp":"2026-05-17 22:36:08","level":"INFO","traceId":"2edf132b5d6edf06618c3fcd319cd491","spanId":"a1c90e1af316c719","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=102, startTime=2026-05-17T13:00Z, endTime=2026-05-17T14:00Z, title=1-on-1 Meeting"}
+{"timestamp":"2026-05-17 22:36:08","level":"INFO","traceId":"2edf132b5d6edf06618c3fcd319cd491","spanId":"a1c90e1af316c719","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=102"}
+{"timestamp":"2026-05-17 22:36:13","level":"INFO","traceId":"fa19dce97841ea570cc5ff8fdcd19fc3","spanId":"2bf73e589c18e2b3","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=103, startTime=2026-05-17T09:00Z, endTime=2026-05-17T09:30Z, title=Quick Sync"}
+{"timestamp":"2026-05-17 22:36:13","level":"INFO","traceId":"fa19dce97841ea570cc5ff8fdcd19fc3","spanId":"2bf73e589c18e2b3","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=103"}
+{"timestamp":"2026-05-17 22:36:17","level":"INFO","traceId":"0ed43a68380b03e4fe4d95cd3255cd34","spanId":"e2b4f727e31940de","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=103, startTime=2026-05-17T10:00Z, endTime=2026-05-17T11:30Z, title=Workshop"}
+{"timestamp":"2026-05-17 22:36:17","level":"INFO","traceId":"0ed43a68380b03e4fe4d95cd3255cd34","spanId":"e2b4f727e31940de","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=103"}
+{"timestamp":"2026-05-17 22:36:21","level":"INFO","traceId":"f14df6b5fad74384ce1aa49bc643e6e7","spanId":"f68a958ca7e160db","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=103, startTime=2026-05-17T13:00Z, endTime=2026-05-17T14:00Z, title=Client Call"}
+{"timestamp":"2026-05-17 22:36:21","level":"INFO","traceId":"f14df6b5fad74384ce1aa49bc643e6e7","spanId":"f68a958ca7e160db","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=103"}
+{"timestamp":"2026-05-17 22:36:24","level":"INFO","traceId":"2d7396f7024f78135435b501a8a094a4","spanId":"95fdd430151709b6","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=103, startTime=2026-05-17T15:00Z, endTime=2026-05-17T16:00Z, title=Retrospective"}
+{"timestamp":"2026-05-17 22:36:24","level":"INFO","traceId":"2d7396f7024f78135435b501a8a094a4","spanId":"95fdd430151709b6","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=103"}
+{"timestamp":"2026-05-17 22:36:29","level":"INFO","traceId":"c952b1379ca5575eb3ed9d901ee80dcb","spanId":"cb01c22a9b1e1616","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=104, startTime=2026-05-17T10:00Z, endTime=2026-05-17T12:00Z, title=Architecture Review"}
+{"timestamp":"2026-05-17 22:36:29","level":"INFO","traceId":"c952b1379ca5575eb3ed9d901ee80dcb","spanId":"cb01c22a9b1e1616","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=104"}
+{"timestamp":"2026-05-17 22:36:32","level":"INFO","traceId":"246a31a689cf12db3f94beef66c35db5","spanId":"c2aed07d2157ee4a","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=105, startTime=2026-05-17T09:00Z, endTime=2026-05-17T10:00Z, title=Team Breakfast"}
+{"timestamp":"2026-05-17 22:36:32","level":"INFO","traceId":"246a31a689cf12db3f94beef66c35db5","spanId":"c2aed07d2157ee4a","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=105"}
+{"timestamp":"2026-05-17 22:36:37","level":"INFO","traceId":"b6fa8f03c7ed89a0aa83ec69d634e3f0","spanId":"7c0ffbb0fa0200e8","logger":"o.o.api.BookingsApiController","message":"Booking request received: roomId=105, startTime=2026-05-17T14:00Z, endTime=2026-05-17T15:00Z, title=Product Demo"}
+{"timestamp":"2026-05-17 22:36:37","level":"INFO","traceId":"b6fa8f03c7ed89a0aa83ec69d634e3f0","spanId":"7c0ffbb0fa0200e8","logger":"o.o.api.BookingsApiController","message":"Booking created successfully: bookingId=1, roomId=105"}
+{"timestamp":"2026-05-17 22:36:42","level":"INFO","traceId":"4ab85c24e2d7ba28034d9faa00c43713","spanId":"cbdc5a06095686d6","logger":"o.o.api.BookingsApiController","message":"Booking cancellation requested: bookingId=1"}
+{"timestamp":"2026-05-17 22:36:42","level":"INFO","traceId":"4ab85c24e2d7ba28034d9faa00c43713","spanId":"cbdc5a06095686d6","logger":"o.o.api.BookingsApiController","message":"Booking cancelled successfully: bookingId=1"}
+{"timestamp":"2026-05-17 22:36:42","level":"INFO","traceId":"ac7e8daaa3c5c51d4e3f0c0e41141b56","spanId":"1d999460fe7c3320","logger":"o.o.api.BookingsApiController","message":"Booking cancellation requested: bookingId=3"}
+{"timestamp":"2026-05-17 22:36:42","level":"INFO","traceId":"ac7e8daaa3c5c51d4e3f0c0e41141b56","spanId":"1d999460fe7c3320","logger":"o.o.api.BookingsApiController","message":"Booking cancelled successfully: bookingId=3"}
+{"timestamp":"2026-05-17 22:36:42","level":"INFO","traceId":"cfdf07f607f5d6e322fbb3a68aedc182","spanId":"ad614c25c620681c","logger":"o.o.api.BookingsApiController","message":"Booking cancellation requested: bookingId=5"}
+{"timestamp":"2026-05-17 22:36:42","level":"INFO","traceId":"cfdf07f607f5d6e322fbb3a68aedc182","spanId":"ad614c25c620681c","logger":"o.o.api.BookingsApiController","message":"Booking cancelled successfully: bookingId=5"}
+{"timestamp":"2026-05-17 22:36:51","level":"WARN","traceId":"0887889467369996ca870d1442797c6e","spanId":"bf085f76cd26421e","logger":"o.s.w.s.m.s.DefaultHandlerExceptionResolver","message":"Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.openapitools.model.Booking> org.openapitools.api.BookingsApiController.bookingsPost(org.openapitools.model.BookingRequest): [Field error in object 'bookingRequest' on field 'endTime': rejected value [null]; codes [NotNull.bookingRequest.endTime,NotNull.endTime,NotNull.java.time.OffsetDateTime,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequest.endTime,endTime]; arguments []; default message [endTime]]; default message [не должно равняться null]] ]"}
+{"timestamp":"2026-05-17 22:36:56","level":"WARN","traceId":"0c8bd7f7b88dda7c2ab577eb95625070","spanId":"188988d060955ed2","logger":"o.s.w.s.m.s.DefaultHandlerExceptionResolver","message":"Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.openapitools.model.Booking> org.openapitools.api.BookingsApiController.bookingsPost(org.openapitools.model.BookingRequest): [Field error in object 'bookingRequest' on field 'roomId': rejected value [null]; codes [NotNull.bookingRequest.roomId,NotNull.roomId,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequest.roomId,roomId]; arguments []; default message [roomId]]; default message [не должно равняться null]] ]"}
+{"timestamp":"2026-05-17 22:37:00","level":"WARN","traceId":"6049b344f570cb9e645b1380736d86c3","spanId":"26f85d29daacb20c","logger":"o.s.w.s.m.s.DefaultHandlerExceptionResolver","message":"Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.openapitools.model.Booking> org.openapitools.api.BookingsApiController.bookingsPost(org.openapitools.model.BookingRequest): [Field error in object 'bookingRequest' on field 'startTime': rejected value [null]; codes [NotNull.bookingRequest.startTime,NotNull.startTime,NotNull.java.time.OffsetDateTime,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequest.startTime,startTime]; arguments []; default message [startTime]]; default message [не должно равняться null]] ]"}
+{"timestamp":"2026-05-17 22:37:05","level":"WARN","traceId":"7fbaa4673bfcd78840809dcc3dcb7d4b","spanId":"e569d683d0d29064","logger":"o.s.w.s.m.s.DefaultHandlerExceptionResolver","message":"Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.openapitools.model.Booking> org.openapitools.api.BookingsApiController.bookingsPost(org.openapitools.model.BookingRequest) with 3 errors: [Field error in object 'bookingRequest' on field 'roomId': rejected value [null]; codes [NotNull.bookingRequest.roomId,NotNull.roomId,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequest.roomId,roomId]; arguments []; default message [roomId]]; default message [не должно равняться null]] [Field error in object 'bookingRequest' on field 'endTime': rejected value [null]; codes [NotNull.bookingRequest.endTime,NotNull.endTime,NotNull.java.time.OffsetDateTime,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequest.endTime,endTime]; arguments []; default message [endTime]]; default message [не должно равняться null]] [Field error in object 'bookingRequest' on field 'startTime': rejected value [null]; codes [NotNull.bookingRequest.startTime,NotNull.startTime,NotNull.java.time.OffsetDateTime,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookingRequest.startTime,startTime]; arguments []; default message [startTime]]; default message [не должно равняться null]] ]"}

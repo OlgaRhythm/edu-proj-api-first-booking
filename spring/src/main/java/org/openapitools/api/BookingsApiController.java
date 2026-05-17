@@ -2,28 +2,21 @@ package org.openapitools.api;
 
 import org.openapitools.model.Booking;
 import org.openapitools.model.BookingRequest;
+import io.micrometer.observation.Observation;
+import io.micrometer.observation.ObservationRegistry;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.CookieValue;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RequestPart;
-import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.context.request.NativeWebRequest;
 
 import jakarta.validation.constraints.*;
 import jakarta.validation.Valid;
 import java.time.Duration;
-
 import java.util.Optional;
 import jakarta.annotation.Generated;
 
@@ -39,6 +32,9 @@ public class BookingsApiController implements BookingsApi {
     private MetricsService metricsService;
 
     @Autowired
+    private ObservationRegistry observationRegistry;
+
+    @Autowired
     public BookingsApiController(NativeWebRequest request) {
         this.request = request;
     }
@@ -50,75 +46,89 @@ public class BookingsApiController implements BookingsApi {
 
     @Override
     public ResponseEntity<Booking> bookingsPost(@Valid BookingRequest bookingRequest) {
-
-        log.info("Booking request received: roomId={}, startTime={}, endTime={}, title={}",
-                bookingRequest.getRoomId(),
-                bookingRequest.getStartTime(),
-                bookingRequest.getEndTime(),
-                bookingRequest.getTitle());
+        // Кастомный спан: валидация бронирования
+        Observation validationSpan = Observation.createNotStarted("booking.validation", observationRegistry)
+                .lowCardinalityKeyValue("room.id", bookingRequest.getRoomId().toString())
+                .start();
 
         try {
-            // ВРЕМЕННАЯ ЗАГЛУШКА
-            Booking booking = new Booking();
-            booking.setId(1);
-            booking.setRoomId(bookingRequest.getRoomId());
-            booking.setStartTime(bookingRequest.getStartTime());
-            booking.setEndTime(bookingRequest.getEndTime());
-            booking.setTitle(bookingRequest.getTitle());
-
-            // Количество созданных бронирований
-            metricsService.recordBookingCreated();
-
-            // Длительность бронирования
-            if (bookingRequest.getStartTime() != null && bookingRequest.getEndTime() != null) {
-                Duration duration = Duration.between(
-                        bookingRequest.getStartTime(),
-                        bookingRequest.getEndTime()
-                );
-                metricsService.recordBookingDuration(duration);
-            }
-
-            // Бронирования по комнатам (с тегами)
-            metricsService.recordBookingByRoom(
+            log.info("Booking request received: roomId={}, startTime={}, endTime={}, title={}",
                     bookingRequest.getRoomId(),
-                    "room_" + bookingRequest.getRoomId()
-            );
+                    bookingRequest.getStartTime(),
+                    bookingRequest.getEndTime(),
+                    bookingRequest.getTitle());
 
-            log.info("Booking created successfully: bookingId={}, roomId={}",
-                    booking.getId(), booking.getRoomId());
+            Observation creationSpan = Observation.createNotStarted("booking.create", observationRegistry)
+                    .lowCardinalityKeyValue("room.id", bookingRequest.getRoomId().toString())
+                    .start();
 
-            return new ResponseEntity<>(booking, HttpStatus.CREATED);
+            try {
+                // ВРЕМЕННАЯ ЗАГЛУШКА
+                Booking booking = new Booking();
+                booking.setId(1);
+                booking.setRoomId(bookingRequest.getRoomId());
+                booking.setStartTime(bookingRequest.getStartTime());
+                booking.setEndTime(bookingRequest.getEndTime());
+                booking.setTitle(bookingRequest.getTitle());
+
+                metricsService.recordBookingCreated();
+
+                if (bookingRequest.getStartTime() != null && bookingRequest.getEndTime() != null) {
+                    Duration duration = Duration.between(
+                            bookingRequest.getStartTime(),
+                            bookingRequest.getEndTime()
+                    );
+                    metricsService.recordBookingDuration(duration);
+                }
+
+                metricsService.recordBookingByRoom(
+                        bookingRequest.getRoomId(),
+                        "room_" + bookingRequest.getRoomId()
+                );
+
+                log.info("Booking created successfully: bookingId={}, roomId={}",
+                        booking.getId(), booking.getRoomId());
+                return new ResponseEntity<>(booking, HttpStatus.CREATED);
+            } finally {
+                creationSpan.stop();
+            }
         } catch (Exception e) {
             log.error("Failed to create booking: roomId={}, error={}",
                     bookingRequest.getRoomId(), e.getMessage(), e);
+            validationSpan.error(e);
             throw e;
+        } finally {
+            validationSpan.stop();
         }
     }
 
     @Override
     public ResponseEntity<Void> bookingsBookingIdDelete(Integer bookingId) {
-
-        log.info("Booking cancellation requested: bookingId={}", bookingId);
+        // Кастомный спан: отмена бронирования
+        Observation cancellationSpan = Observation.createNotStarted("booking.cancel", observationRegistry)
+                .lowCardinalityKeyValue("booking.id", bookingId.toString())
+                .start();
 
         try {
-            // Количество отменённых бронирований
+            log.info("Booking cancellation requested: bookingId={}", bookingId);
             metricsService.recordBookingCancelled();
             log.info("Booking cancelled successfully: bookingId={}", bookingId);
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         } catch (Exception e) {
             log.error("Failed to cancel booking: bookingId={}, error={}",
                     bookingId, e.getMessage(), e);
+            cancellationSpan.error(e);
             throw e;
+        } finally {
+            cancellationSpan.stop();
         }
     }
 
     @Override
     public ResponseEntity<Booking> getBooking(Integer bookingId) {
         log.debug("Get booking requested: bookingId={}", bookingId);
-        // Временная заглушка
         Booking booking = new Booking();
         booking.setId(bookingId);
         return new ResponseEntity<>(booking, HttpStatus.OK);
     }
-
 }

@@ -1,0 +1,18 @@
+{
+	"ulid": "01KRVMZ24Q5CHFQA7Y3RGN9313",
+	"minTime": 1779033604776,
+	"maxTime": 1779040800000,
+	"stats": {
+		"numSamples": 2400,
+		"numFloatSamples": 2400,
+		"numSeries": 5,
+		"numChunks": 20
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01KRVMZ24Q5CHFQA7Y3RGN9313"
+		]
+	},
+	"version": 1
+}

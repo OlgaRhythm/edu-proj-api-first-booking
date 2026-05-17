@@ -10,5 +10,41 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:11.0.20" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-web:7.0.6" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:2.0.17" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:7.0.6" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:7.0.6" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.validation:jakarta.validation-api:3.1.1" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.annotation:jakarta.annotation-api:3.0.0" level="project" />
+    <orderEntry type="library" name="Maven: io.micrometer:micrometer-core:1.16.4" level="project" />
+    <orderEntry type="library" name="Maven: org.springdoc:springdoc-openapi-common:1.6.14" level="project" />
+    <orderEntry type="library" name="Maven: io.swagger.core.v3:swagger-models:2.2.7" level="project" />
+    <orderEntry type="library" name="Maven: io.micrometer:micrometer-observation:1.16.4" level="project" />
+    <orderEntry type="library" name="Maven: io.micrometer:micrometer-observation:1.17.0-M3" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.21" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/annotations/26.0.2/annotations-26.0.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="Maven: org.openapitools:jackson-databind-nullable:0.2.8" level="project" />
+    <orderEntry type="library" name="Maven: io.swagger.core.v3:swagger-annotations:2.2.7" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-core:7.0.6" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:4.0.5" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:4.0.5" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.21.2" level="project" />
+    <orderEntry type="library" name="Maven: io.micrometer:micrometer-tracing:1.6.4" level="project" />
+    <orderEntry type="library" name="Maven: io.micrometer:micrometer-observation:1.15.10" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-web:6.2.17" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.validation:jakarta.validation-api:3.0.2" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:6.2.17" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:6.2.17" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.annotation:jakarta.annotation-api:2.1.1" level="project" />
+    <orderEntry type="library" name="Maven: io.micrometer:micrometer-core:1.15.10" level="project" />
   </component>
 </module>

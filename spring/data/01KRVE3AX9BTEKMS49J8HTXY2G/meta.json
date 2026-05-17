@@ -1,0 +1,18 @@
+{
+	"ulid": "01KRVE3AX9BTEKMS49J8HTXY2G",
+	"minTime": 1779026414676,
+	"maxTime": 1779033600000,
+	"stats": {
+		"numSamples": 2105,
+		"numFloatSamples": 2105,
+		"numSeries": 5,
+		"numChunks": 16
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01KRVE3AX9BTEKMS49J8HTXY2G"
+		]
+	},
+	"version": 1
+}

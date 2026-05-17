@@ -5,13 +5,49 @@ datasources:
     type: prometheus
     access: proxy
     url: http://host.docker.internal:9090
-    isDefault: true
+    isDefault: false
     editable: true
 
   - name: Loki
     type: loki
     access: proxy
-    url: http://host.docker.internal:3100
+    url: http://booking-loki:3100
     editable: true
     jsonData:
       maxLines: 1000
+      derivedFields:
+        - name: traceId
+          matcherRegex: '"traceId":"(\w+)"'
+          url: '${__value.raw}'
+          datasourceUid: tempo
+
+  - name: VictoriaLogs
+    type: victorialogs
+    access: proxy
+    url: http://booking-victorialogs:9428
+    editable: true
+
+  - name: Tempo
+    type: tempo
+    access: proxy
+    url: http://booking-tempo:3200
+    isDefault: true
+    editable: true
+    jsonData:
+      tracesToLogs:
+        datasourceUid: loki
+        spanEndTimeShift: '100ms'
+        spanStartTimeShift: '-100ms'
+        filterByTraceID: true
+        filterBySpanID: false
+        tags: ['application', 'service.name', 'http.method']
+        customQuery: false
+      tracesToMetrics:
+        datasourceUid: prometheus
+        spanEndTimeShift: '100ms'
+        spanStartTimeShift: '-100ms'
+        tags: [{ key: 'service.name', value: 'meeting-rooms' }]
+      serviceMap:
+        datasourceUid: prometheus
+      nodeGraph:
+        enabled: true

@@ -38,6 +38,39 @@ services:
     networks:
       - observability
 
+  tempo:
+    image: grafana/tempo:2.7.1
+    container_name: booking-tempo
+    user: "0:0"
+    ports:
+      - "4317:4317"  # OTLP gRPC
+      - "4318:4318"  # OTLP HTTP
+      - "3200:3200"  # Tempo Query API
+    command: [ "-config.file=/etc/tempo-config.yaml" ]
+    volumes:
+      - ./tempo-config.yaml:/etc/tempo-config.yaml
+      - tempo-data:/tmp/tempo
+    networks:
+      - observability
+
+  grafana:
+    image: grafana/grafana:11.1.0
+    container_name: booking-grafana
+    ports:
+      - "3001:3000"
+    environment:
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
+      - GF_AUTH_DISABLE_LOGIN_FORM=true
+    depends_on:
+      - tempo
+      - loki
+      - victorialogs
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - observability
+
 networks:
   observability:
     driver: bridge
@@ -45,3 +78,4 @@ networks:
 volumes:
   loki-data:
   victorialogs-data:
+  tempo-data:
