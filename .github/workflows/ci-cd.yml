@@ -85,4 +85,4 @@ jobs:
         with:
           context: spring
           push: true
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:dev
+          tags: ghcr.io/olgarhythm/edu-proj-api-first-booking:dev
